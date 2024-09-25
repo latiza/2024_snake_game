@@ -1,0 +1,36 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-container">
+            <h1>Bejelentkezés</h1>
+            <form action="backend/login.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Jelszó:</label>
+                <input type="password" id="password" name="password" required>
+
+                <div>
+                    <label for="new_game">
+                        <input type="radio" id="new_game" name="action" value="new" checked> Új játék kezdése
+                    </label>
+                    <label for="load_game">
+                        <input type="radio" id="load_game" name="action" value="load"> Régi adatok betöltése
+                    </label>
+                </div>
+
+                <button type="submit">Bejelentkezés</button>
+            </form>
+            <p>Még nem regisztráltál? <a href="register.html">Regisztrálj itt!</a></p>
+        </div>
+    </div>
+</body>
+</html>
